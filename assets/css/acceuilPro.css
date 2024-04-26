@@ -1,0 +1,303 @@
+header {
+  /* background-color: #222; */
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 40px;
+  /* width: 100%; */
+}
+
+.logoHeader {
+  display: block;
+  height: 70px;
+  width: 80px;
+}
+
+nav {
+  display: flex;
+  gap: 50px;
+}
+
+.navOnglet {
+  color: var(--clr-whiteTrans);
+  text-decoration: none;
+}
+
+.navOnglet:hover {
+  color: var(--clr-alice);
+}
+
+.heroSection {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.250), transparent),
+    url(../img/heroImage.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+}
+
+.menuDeroulant {
+  background-color: var(--clr-whiteTrans);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+  margin-top: 10px;
+  position: absolute;
+  border-radius: 5px;
+}
+
+/* ! REGLAGE RESPONSIVE A FAIRE ZAPPE PAS  */
+/* @media (width >= ...){
+
+} */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin: 140px 0 0 20px;
+}
+
+.textHeroSection {
+  color: var(--clr-alice);
+  text-transform: uppercase;
+}
+
+.titrePrincipal {
+  font-size: xx-large;
+}
+
+.heroButtonContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 250px;
+}
+
+.button {
+  background-color: var(--clr-alice);
+  color: var(--clr-black);
+  border: none;
+  margin: auto;
+  padding: 15px;
+  font-size: large;
+  border-radius: 20px;
+}
+
+.button:hover {
+  background-color: var(--clr-whiteTrans);
+  /* color: var(--clr-alice); */
+  /* border: 1px solid var(--clr-alice); */
+  /* transition: 1s; */
+}
+
+.blaBla {
+  /* background-color: var(--clr-alice); */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  /* margin-top: 100px; */
+  padding:140px 150px 95px 150px;
+  width: 100%;
+  height: 20vh;
+}
+
+.phraseAccroche {
+  color: var(--clr-black);
+  /* margin-top: 100px; */
+}
+
+.pATitre {
+  text-transform: uppercase;
+}
+
+.pATexte {
+  font-size: large;
+}
+
+.services {
+  /* background-color: antiquewhite; */
+
+  height: 70vh;
+}
+
+.cardContainer {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+  height: 70vh;
+  margin: auto;
+}
+
+.card {
+  /* background-image: url(../img/party.jpg);
+  background-position: center;
+  background-size: cover; */
+  flex-grow: 1;
+  height: 90%;
+  /* padding: 50px; */
+  border-radius: 10px;
+  /* width: 20vw; */
+  /* border: 1px solid black; */
+  transition: all 0.3s ease-out;
+}
+
+.contentCard{
+  color: var(--clr-alice);
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly ;
+  align-items: center;
+  gap: 250px;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  /* margin-top:50px; */
+  transition: 1s;
+
+}
+
+.titleCardSelection{
+  margin-top: 70px;
+}
+
+.contentCard:hover{
+  opacity: 1;
+
+}
+
+
+.cardLeft {
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.250), transparent),url(../img/soiréImageRepresentation.jpg);
+  background-position: center;
+  background-size: cover;
+  
+}
+.cardMid {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.250), transparent), url(../img/voyageImagerepresentation.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.cardRight {
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.250), transparent),url(../img/party.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.buttonServices{
+  padding: 10px 20px;
+}
+
+/* .cardContainer:hover .cardMid .cardLeft {
+  background-color: yellow;
+  width: 10vw;
+  
+}
+.cardLeft:hover{
+  width: 50vw;
+} */
+
+.card:hover {
+  flex-grow: 2;
+
+  /* width: 50vw; */
+}
+
+/* .cardLeft:hover + .card,
+.cardMid:hover + .card,
+.cardRight:hover + .card {
+  flex-grow: 0;
+  width: 15VW;
+} */
+
+.whoContainer{
+  display: flex;
+  z-index: 10;
+  position: relative;
+  background: #fff;
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.250)), url(../img/whoBakImg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 70vh;
+
+}
+
+.who{
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid black; */
+
+}
+
+.whoImg{
+  background-color: red;
+  border-radius: 10px;
+  height: 84%;
+  width: 20%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.whoTxtContainer{
+  color: var(--clr-alice);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 130px;
+
+}
+
+.whoTxt{
+  font-size: medium;
+}
+
+footer{
+  height: 50vh;
+}
+
+.socialMedia{
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  height: 15%;
+}
+
+.icon{
+  color: var(--clr-black);
+}
+
+
+.realFooter{
+  background-color: blue;
+  height: 85%;
+}
+
+/*!CODE POUR IMAGE BACKGROUNDE DEFILMENT FIXED
+  z-index: 10;
+  position: relative;
+  background: #fff;
+  background-image: url(../img/heroImage.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 80vh;
+
+*/
+
+
+/* 
+toggle creer une classe active au clique et l'enleve lorsqu'on reclic
+*/

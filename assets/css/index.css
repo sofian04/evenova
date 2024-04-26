@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+}
+
+.part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background-color: aliceblue;
+  color: #252A24;
+  width: 50%;
+  height: 100vh;
+}
+
+/* .part:hover{
+    transition: 2s;
+    transform: scale(1.2);
+    
+
+} */
+.pro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background-color: #252A24;
+  color: aliceblue;
+  width: 50%;
+  height: 100vh;
+}
+/* .pro:hover{
+    transition: 2s;
+    transform: scale(1.2);
+    
+
+} */
