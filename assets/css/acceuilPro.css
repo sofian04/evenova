@@ -281,8 +281,15 @@ footer{
 
 
 .realFooter{
-  background-color: blue;
+  background-color: var(--clr-black);
+  display: flex;
+
   height: 85%;
+}
+
+.contentFooter{
+  border: 1px solid #fff;
+  width: 25%;
 }
 
 /*!CODE POUR IMAGE BACKGROUNDE DEFILMENT FIXED
